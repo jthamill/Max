@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-family: sans-serif;
+  color: blueviolet;
+}
+
+.second-item code {
+  color: green;
+}
+
+code {
+  font-family: monospace;
+  color: red;
+}
+
+/*
+if you want all li's but the first one
+
+li + li {
+  background: black;
+  color: white;
+} */
+
+ol li {
+  background: black;
+  color: white;
+}
