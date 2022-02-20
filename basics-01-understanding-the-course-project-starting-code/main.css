@@ -7,6 +7,12 @@ body {
   margin: 0;
 }
 
+.main-header {
+  width: 100%;
+  background: #2ddf5c;
+  padding: 8px 16px;
+}
+
 #product-overview {
   background: #ff1b68;
   /* default for width is 100%, so doesn't really need to be set to 100, just used for examplw */
