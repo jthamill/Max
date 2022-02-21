@@ -93,6 +93,45 @@ body {
   color: #0e4f1f;
 }
 
+#key-features {
+  background: #ff1b68;
+  margin-top: 80px;
+  padding: 16px;
+}
+
+#key-features .section-title {
+  color: white;
+  margin: 32px;
+}
+
+.key-features__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.key-features__item {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+}
+
+.key-features__image {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  background: white;
+  margin: auto;
+  border: 2px solid #424242;
+}
+.key-features__description {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+}
+
 /* could have put the below inside the .main-header__brand styles but wanted to show use of a combinator selector*/
 .main-header > div {
   display: inline-block;
