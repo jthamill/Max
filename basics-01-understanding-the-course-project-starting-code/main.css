@@ -76,6 +76,23 @@ body {
   box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
+.button {
+  background: #0e4f1f;
+  color: white;
+  font: inherit;
+  border: 1.5px solid #0e4f1f;
+  padding: 8px;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+  background: white;
+  color: #0e4f1f;
+}
+
 /* could have put the below inside the .main-header__brand styles but wanted to show use of a combinator selector*/
 .main-header > div {
   display: inline-block;
