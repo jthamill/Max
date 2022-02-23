@@ -3,6 +3,11 @@
   background: url("freedom.jpg");
 
   /* default for width is 100%, so doesn't really need to be set to 100, just used for examplw */
+  background-size: cover;
+  /* 10% cropped from left of original image */
+
+  background-position: left 10%;
+  background-repeat: no-repeat;
   width: 100%;
   height: 528px;
   padding: 10px;
