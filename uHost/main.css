@@ -1,31 +1,33 @@
 #product-overview {
-  margin-top: 2rem;
-  /* background-image: linear-gradient(red, blue); */
-  background: url("freedom.jpg") left 10% bottom 80% / cover no-repeat
-    border-box;
-  /* default for width is 100%, so doesn't really need to be set to 100, just used for examplw */
-  /* background-size: cover; */
-  /* 10% cropped from left of original image */
-  /* background-position: left 10% bottom 20%; */
-  /* background-repeat: no-repeat; */
+  background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
+    url("images/freedom.jpg") left 10% bottom 70%/cover no-repeat border-box,
+    #ff1b68;
+  /* background-image: url("freedom.jpg");
+    background-size: cover;
+    background-position: left 10% bottom 20%; */
+  /* background-repeat: no-repeat;
+    background-origin: border-box;
+    background-clip: border-box; */
+  /* background-image: linear-gradient(180deg, red 70%, blue 60%, rgba(0,0,0,0.5)); */
+  /* background-image: radial-gradient(ellipse farthest-corner at 20% 50%, red, blue 70%, green); */
   width: 100vw;
-  /* width: 100%; using vh and vh on windows leaves scrollbars showing. Use % if it bugs you. Can google other code too*/
   height: 33vh;
-  /* padding: 0.65rem; */
+  margin-top: 2.75rem;
+  /* border: 5px dashed red; */
   position: relative;
+}
+
+.section-title {
+  color: #2ddf5c;
+  text-align: center;
 }
 
 #product-overview h1 {
   color: white;
   font-family: "Anton", sans-serif;
   position: absolute;
-  bottom: 2%;
-  left: 2%;
-}
-
-.section-title {
-  color: #2ddf5d;
-  text-align: center;
+  bottom: 5%;
+  left: 3%;
 }
 
 .plan__list {
@@ -36,12 +38,26 @@
 
 .plan {
   background: #d5ffdc;
-  display: inline-block;
-  margin: 0.5rem;
-  padding: 1rem;
   text-align: center;
-  vertical-align: middle;
+  padding: 1rem;
+  margin: 0.5rem;
+  display: inline-block;
   width: 30%;
+  vertical-align: middle;
+}
+
+.plan--highlighted {
+  background: #19b84c;
+  color: white;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.plan__annotation {
+  background: white;
+  color: #19b84c;
+  padding: 0.5rem;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
 }
 
 .plan__title {
@@ -52,32 +68,22 @@
   color: #858585;
 }
 
+.plan--highlighted .plan__title {
+  color: white;
+}
+
 .plan--highlighted .plan__price {
   color: #0e4f1f;
 }
 
-.plan--highlighted .plan__title {
-  color: white;
-}
 .plan__features {
-  line-height: 1.5;
   list-style: none;
-  margin: 0.65rem;
+  margin: 0;
   padding: 0;
 }
 
-.plan--highlighted {
-  background: #19b84c;
-  color: white;
-  box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.5);
-}
-
-.plan__annotation {
-  background: white;
-  padding: 0.65rem;
-  border-radius: 10px;
-  color: #19b84c;
-  box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.5);
+.plan__feature {
+  margin: 0.5rem 0;
 }
 
 #key-features {
@@ -91,34 +97,39 @@
   margin: 2rem;
 }
 
-.key-features__list {
+.key-feature__list {
   list-style: none;
   margin: 0;
   padding: 0;
   text-align: center;
 }
 
-.key-features__item {
+.key-feature {
   display: inline-block;
   width: 30%;
   vertical-align: top;
 }
 
-.key-features__image {
-  width: 8rem;
-  height: 8rem;
-  border-radius: 100rem;
-  padding: 1.25rem;
-  background: white;
-  margin: auto;
+.key-feature__image {
+  background: #ffcede;
+  width: 128px;
+  height: 128px;
   border: 2px solid #424242;
+  border-radius: 50%;
+  margin: auto;
+  padding: 1.5rem;
 }
-.key-features__description {
+
+.key-feature__description {
   text-align: center;
   font-weight: bold;
   color: white;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
 }
+
+/* h1 {
+    font-family: sans-serif;
+} */
 
 .modal {
   position: fixed;
