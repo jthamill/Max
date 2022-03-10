@@ -6,14 +6,27 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
+  display: grid;
+  grid-template-rows: 3.5rem auto fit-content(8rem);
+  grid-template-areas:
+    "h"
+    "m"
+    "f";
+  height: 100%;
+  /* padding:3.5rem; */
 }
 
 main {
-  min-height: calc(100vh - 3.5rem - 8rem);
-  margin-top: 3.5rem;
+  /* min-height: calc(100vh - 3.5rem - 8rem); */
+  /* margin-top: 3.5rem; */
+  grid-area: m;
 }
 
 .backdrop {
@@ -39,6 +52,7 @@ main {
   align-items: center;
   justify-content: space-between;
   z-index: 2;
+  grid-area: h;
 }
 
 .toggle-button {
@@ -136,6 +150,7 @@ main {
   background: black;
   padding: 2rem;
   margin-top: 3rem;
+  grid-area: f;
 }
 
 .main-footer__links {
