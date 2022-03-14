@@ -1,2 +1,2 @@
 # 
-Just a CSS practice project.
+uHost frontend only project.
